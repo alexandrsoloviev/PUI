@@ -49,7 +49,7 @@ public class HoliTest {
     public void betTest() {
 
         step("Открыть PUI", () -> {
-            open("https://dev-operator.holi.solutions/registration/login/?next=/");
+            open("https://operator.holi.solutions/registration/login/?next=/");
         });
 
         step("Авторизоваться", () -> {
@@ -58,7 +58,7 @@ public class HoliTest {
         });
 
         step("Выбрать стол и переключиться на вкладку стола", () -> {
-            $x("//div/strong[text()='newtable']/ancestor::div[@class='item']//button").click();
+            $x("//div/strong[text()='table-machine']/ancestor::div[@class='item']//button").click();
             switchTo().window(1);
         });
 
