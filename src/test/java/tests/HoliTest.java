@@ -72,6 +72,39 @@ public class HoliTest {
 
         step("Сделать ставку 10$", () -> {
             $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
+            $x("//div[@class='sc-gsGlKL beXoQa']").click();
             $x("//*[@class='sc-evzXkX fzypgY']").click();
         });
 
