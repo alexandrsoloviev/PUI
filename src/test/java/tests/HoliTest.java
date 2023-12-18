@@ -4,6 +4,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import helpers.Attachments;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -70,42 +71,14 @@ public class HoliTest {
             beginningRoundBalance = $x("//div[@class='sc-laZRCg fTPkLS']//p").getText();
         });
 
-        step("Сделать ставку 10$", () -> {
+        step("Сделать ставку 500$", () -> {
+            $x("//div[@class='sc-UpCWa lbabjv sc-jNJNQp lfgvlB'][2]").click();
+            $x("//div[@class='sc-UpCWa lbabjv sc-jNJNQp lfgvlB'][2]").click();
+            $x("//div[@class='sc-UpCWa lbabjv sc-jNJNQp lfgvlB'][2]").click();
+            $x("//*[@id='chip_body']/*[@fill='#CD0333']").click();
+
             $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//div[@class='sc-gsGlKL beXoQa']").click();
-            $x("//*[@class='sc-evzXkX fzypgY']").click();
+
         });
 
         step("Дождаться начала следующего раунда", () -> {
@@ -113,7 +86,7 @@ public class HoliTest {
             $x("//span[@class='sc-ckLdoV hNcwV']").should(visible, Duration.ofMinutes(1));
         });
 
-        step("Сохранить в переменную баланс после сыгранного раунда {endRoundBalance}", () -> {
+        step("Сохранить в переменную баланс после сыгранного раунда [endRoundBalance]", () -> {
             endRoundBalance = $x("//div[@class='sc-laZRCg fTPkLS']//p").getText();
         });
 
@@ -121,6 +94,8 @@ public class HoliTest {
             assertNotEquals(beginningRoundBalance, endRoundBalance);
         });
     }
+
+
 
     @AfterEach
     void addAttachments() {
