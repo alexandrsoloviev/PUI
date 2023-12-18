@@ -67,18 +67,18 @@ public class HoliTest {
             $x("//span[@class='sc-ckLdoV hNcwV']").should(visible, Duration.ofMinutes(1));
         });
 
-        step("Дождаться начала раунда и сохранить в переменную стартовый баланс {beginningRoundBalance}", () -> {
+        step("Дождаться начала раунда и сохранить в переменную стартовый баланс (beginningRoundBalance)", () -> {
             beginningRoundBalance = $x("//div[@class='sc-laZRCg fTPkLS']//p").getText();
         });
 
-        step("Сделать ставку 500$", () -> {
+        step("Сделать ставку 10$", () -> {
             $x("//div[@class='sc-UpCWa lbabjv sc-jNJNQp lfgvlB'][2]").click();
             $x("//div[@class='sc-UpCWa lbabjv sc-jNJNQp lfgvlB'][2]").click();
             $x("//div[@class='sc-UpCWa lbabjv sc-jNJNQp lfgvlB'][2]").click();
-            $x("//*[@id='chip_body']/*[@fill='#CD0333']").click();
+            $x("//*[@fill='#CD0333']/..").click();
 
             $x("//div[@class='sc-gsGlKL beXoQa']").click();
-
+            $x("//*[@class='sc-evzXkX fzypgY']").click();
         });
 
         step("Дождаться начала следующего раунда", () -> {
@@ -94,6 +94,7 @@ public class HoliTest {
             assertNotEquals(beginningRoundBalance, endRoundBalance);
         });
     }
+
 
 
 

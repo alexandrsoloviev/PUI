@@ -61,3 +61,5 @@ public class Attachments {
         return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
     }
 }
+
+
