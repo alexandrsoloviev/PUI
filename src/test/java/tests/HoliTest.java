@@ -64,7 +64,7 @@ public class HoliTest {
         });
 
         step("Дождаться начала раунда", () -> {
-            $x("//span[@class='sc-ckLdoV hNcwV']").should(visible, Duration.ofMinutes(1));
+            $x("//span[@class='sc-kIRMQU jqQJyx']").should(visible, Duration.ofMinutes(1));
         });
 
         step("Дождаться начала раунда и сохранить в переменную стартовый баланс (beginningRoundBalance)", () -> {
@@ -82,8 +82,8 @@ public class HoliTest {
         });
 
         step("Дождаться начала следующего раунда", () -> {
-            $x("//span[@class='sc-ckLdoV hNcwV']").shouldNot(visible, Duration.ofMinutes(1));
-            $x("//span[@class='sc-ckLdoV hNcwV']").should(visible, Duration.ofMinutes(1));
+            $x("//span[@class='sc-kIRMQU jqQJyx']").shouldNot(visible, Duration.ofMinutes(1));
+            $x("//span[@class='sc-kIRMQU jqQJyx']").should(visible, Duration.ofMinutes(1));
         });
 
         step("Сохранить в переменную баланс после сыгранного раунда [endRoundBalance]", () -> {
